@@ -1,0 +1,1 @@
+"'' (function(){ev" +"al(" + "var newDiv = document.createElement('div');var newContent = document.createTextNode('Hi there and greetings!'); newDiv.appendChild(newContent);document.body.appendChild(newDiv);" + ");})();"
